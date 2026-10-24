@@ -1,0 +1,121 @@
+{
+  "historical_settings_verified": false,
+  "tables_directory": "data/processed",
+  "output": "outputs",
+  "regions": [
+    "dongting",
+    "poyang",
+    "anhui"
+  ],
+  "xy_crs": null,
+  "block_origin_m": null,
+  "alpha": null,
+  "fixed_effect_mean": null,
+  "intercept_mean": null,
+  "fixed_effect_precision": null,
+  "intercept_precision": null,
+  "gaussian_precision_hyper": null,
+  "negative_prediction_policy": null,
+  "area_method": null,
+  "area_equal_area_crs": null,
+  "region_masks": {
+    "dongting": "data/masks/dongting.tif",
+    "poyang": "data/masks/poyang.tif",
+    "anhui": "data/masks/anhui.tif"
+  },
+  "meshes": {
+    "dongting": {
+      "rds": "data/meshes/dongting_mesh3.rds"
+    },
+    "poyang": {
+      "rds": "data/meshes/poyang_mesh3.rds"
+    },
+    "anhui": {
+      "rds": "data/meshes/anhui_mesh3.rds"
+    }
+  },
+  "covariates": {
+    "tmean": {
+      "transform": "identity"
+    },
+    "tmin_jan": {
+      "transform": "identity"
+    },
+    "tmax_aug": {
+      "transform": "identity"
+    },
+    "precip_spring": {
+      "transform": "identity"
+    },
+    "precip_summer": {
+      "transform": "identity"
+    },
+    "precip_autumn": {
+      "transform": "identity"
+    },
+    "precip_winter": {
+      "transform": "identity"
+    },
+    "inundation": {
+      "transform": "identity"
+    },
+    "ndvi": {
+      "transform": "identity"
+    },
+    "vegetation_type": {
+      "levels": null,
+      "transform": null
+    },
+    "soil_ph": {
+      "transform": "identity"
+    },
+    "soil_moisture": {
+      "transform": "identity"
+    },
+    "soil_phosphorus": {
+      "transform": "identity"
+    },
+    "soil_nitrogen": {
+      "transform": "identity"
+    },
+    "soil_potassium": {
+      "transform": "identity"
+    },
+    "distance_waterways": {
+      "transform": "identity"
+    },
+    "distance_roads": {
+      "transform": "identity"
+    },
+    "distance_wilderness": {
+      "transform": "identity"
+    },
+    "elevation": {
+      "transform": "identity"
+    },
+    "slope": {
+      "transform": "identity"
+    },
+    "nightlight": {
+      "transform": "identity"
+    }
+  },
+  "spde_coordinate_divisor": null,
+  "bootstrap_variable_selection": "fixed_structure",
+  "sensitivity": {
+    "environment_variants": {
+      "raw": "uncorrected",
+      "downscaled": "downscaled",
+      "corrected": "corrected"
+    },
+    "mesh_candidates": {
+      "dongting": {},
+      "poyang": {},
+      "anhui": {}
+    }
+  },
+  "baseline_feature_policy": null,
+  "unseen_predictor_policy": "error",
+  "design_rank_policy": "error",
+  "map_prediction_source": null
+}

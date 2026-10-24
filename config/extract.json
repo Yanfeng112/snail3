@@ -1,0 +1,98 @@
+{
+  "survey": "data/raw/survey_2023.csv",
+  "external": "data/raw/external_quadrats.csv",
+  "xy_crs": null,
+  "output": "data/processed",
+  "region_masks": {
+    "dongting": "data/masks/dongting.tif",
+    "poyang": "data/masks/poyang.tif",
+    "anhui": "data/masks/anhui.tif"
+  },
+  "covariates": {
+    "tmean": {
+      "corrected": "data/covariates/tmean_corrected.tif",
+      "uncorrected": "data/covariates/tmean_uncorrected.tif"
+    },
+    "tmin_jan": {
+      "corrected": "data/covariates/tmin_jan_corrected.tif",
+      "uncorrected": "data/covariates/tmin_jan_uncorrected.tif"
+    },
+    "tmax_aug": {
+      "corrected": "data/covariates/tmax_aug_corrected.tif",
+      "uncorrected": "data/covariates/tmax_aug_uncorrected.tif"
+    },
+    "precip_spring": {
+      "corrected": "data/covariates/precip_spring_corrected.tif",
+      "uncorrected": "data/covariates/precip_spring_uncorrected.tif"
+    },
+    "precip_summer": {
+      "corrected": "data/covariates/precip_summer_corrected.tif",
+      "uncorrected": "data/covariates/precip_summer_uncorrected.tif"
+    },
+    "precip_autumn": {
+      "corrected": "data/covariates/precip_autumn_corrected.tif",
+      "uncorrected": "data/covariates/precip_autumn_uncorrected.tif"
+    },
+    "precip_winter": {
+      "corrected": "data/covariates/precip_winter_corrected.tif",
+      "uncorrected": "data/covariates/precip_winter_uncorrected.tif"
+    },
+    "inundation": {
+      "corrected": "data/covariates/inundation_corrected.tif",
+      "uncorrected": "data/covariates/inundation_uncorrected.tif"
+    },
+    "ndvi": {
+      "corrected": "data/covariates/ndvi_corrected.tif",
+      "uncorrected": "data/covariates/ndvi_uncorrected.tif"
+    },
+    "vegetation_type": {
+      "corrected": "data/covariates/vegetation_type_corrected.tif",
+      "uncorrected": "data/covariates/vegetation_type_uncorrected.tif",
+      "levels": null
+    },
+    "soil_ph": {
+      "corrected": "data/covariates/soil_ph_corrected.tif",
+      "uncorrected": "data/covariates/soil_ph_uncorrected.tif"
+    },
+    "soil_moisture": {
+      "corrected": "data/covariates/soil_moisture_corrected.tif",
+      "uncorrected": "data/covariates/soil_moisture_uncorrected.tif"
+    },
+    "soil_phosphorus": {
+      "corrected": "data/covariates/soil_phosphorus_corrected.tif",
+      "uncorrected": "data/covariates/soil_phosphorus_uncorrected.tif"
+    },
+    "soil_nitrogen": {
+      "corrected": "data/covariates/soil_nitrogen_corrected.tif",
+      "uncorrected": "data/covariates/soil_nitrogen_uncorrected.tif"
+    },
+    "soil_potassium": {
+      "corrected": "data/covariates/soil_potassium_corrected.tif",
+      "uncorrected": "data/covariates/soil_potassium_uncorrected.tif"
+    },
+    "distance_waterways": {
+      "corrected": "data/covariates/distance_waterways_corrected.tif",
+      "uncorrected": "data/covariates/distance_waterways_uncorrected.tif"
+    },
+    "distance_roads": {
+      "corrected": "data/covariates/distance_roads_corrected.tif",
+      "uncorrected": "data/covariates/distance_roads_uncorrected.tif"
+    },
+    "distance_wilderness": {
+      "corrected": "data/covariates/distance_wilderness_corrected.tif",
+      "uncorrected": "data/covariates/distance_wilderness_uncorrected.tif"
+    },
+    "elevation": {
+      "corrected": "data/covariates/elevation_corrected.tif",
+      "uncorrected": "data/covariates/elevation_uncorrected.tif"
+    },
+    "slope": {
+      "corrected": "data/covariates/slope_corrected.tif",
+      "uncorrected": "data/covariates/slope_uncorrected.tif"
+    },
+    "nightlight": {
+      "corrected": "data/covariates/nightlight_corrected.tif",
+      "uncorrected": "data/covariates/nightlight_uncorrected.tif"
+    }
+  }
+}

@@ -1,0 +1,74 @@
+{
+  "indicator": "tmean",
+  "output": "outputs/environment/tmean",
+  "template_100m": "data/aux/template_100m_buffered.tif",
+  "xy_crs": null,
+  "observations": "data/observations/tmean.csv",
+  "site_split_file": "data/splits/meteorological_sites.csv",
+  "candidate_degrees": [
+    0.005,
+    0.01,
+    0.05,
+    0.1,
+    0.25
+  ],
+  "auxiliary_combinations": {
+    "M1": [
+      "elevation",
+      "slope",
+      "aspect",
+      "landcover"
+    ],
+    "M2": [
+      "elevation",
+      "slope",
+      "aspect",
+      "landcover",
+      "nightlight"
+    ],
+    "M3": [
+      "elevation",
+      "slope",
+      "aspect",
+      "landcover",
+      "nightlight",
+      "ndvi"
+    ],
+    "M4": [
+      "elevation",
+      "slope",
+      "aspect",
+      "landcover",
+      "nightlight",
+      "evi"
+    ]
+  },
+  "landcover_levels": null,
+  "internal_validation_fraction": 0.2,
+  "correction_folds": 5,
+  "correction_time_mode": null,
+  "filter_outliers": true,
+  "final_idw_k": null,
+  "final_idw_power": null,
+  "periods": [
+    {
+      "key": "2022",
+      "source": "data/raw/tmean_2022.tif",
+      "aux": {
+        "elevation": "data/aux/elevation.tif",
+        "slope": "data/aux/slope.tif",
+        "aspect": "data/aux/aspect.tif",
+        "landcover": "data/aux/landcover_2022.tif",
+        "nightlight": "data/aux/nightlight_2022.tif",
+        "ndvi": "data/aux/ndvi_2022.tif",
+        "evi": "data/aux/evi_2022.tif"
+      }
+    }
+  ],
+  "cnn_split_mode": null,
+  "cnn_block_cells": null,
+  "cnn_buffer_cells": 4,
+  "processing_mask": "data/masks/environment_processing_mask.tif",
+  "physical_bound_policy": null,
+  "physical_bounds": {}
+}

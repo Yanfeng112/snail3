@@ -1,0 +1,143 @@
+{
+  "indicator": "inundation",
+  "output": "outputs/environment/inundation",
+  "template_100m": "data/aux/template_100m_buffered.tif",
+  "xy_crs": null,
+  "observations": "data/observations/inundation.csv",
+  "site_split_file": "data/splits/video_sites.csv",
+  "candidate_degrees": [
+    0.005,
+    0.01,
+    0.05,
+    0.1,
+    0.25
+  ],
+  "auxiliary_combinations": {
+    "M1": [
+      "elevation",
+      "slope",
+      "aspect",
+      "landcover"
+    ],
+    "M2": [
+      "elevation",
+      "slope",
+      "aspect",
+      "landcover",
+      "evi"
+    ],
+    "M3": [
+      "elevation",
+      "slope",
+      "aspect",
+      "landcover",
+      "evi",
+      "precipitation"
+    ],
+    "M4": [
+      "elevation",
+      "slope",
+      "aspect",
+      "landcover",
+      "evi",
+      "precipitation",
+      "soil_moisture"
+    ]
+  },
+  "landcover_levels": null,
+  "internal_validation_fraction": 0.2,
+  "correction_folds": 5,
+  "correction_time_mode": null,
+  "filter_outliers": true,
+  "final_idw_k": null,
+  "final_idw_power": null,
+  "periods": [
+    {
+      "key": "2020",
+      "source": "data/raw/inundation_2020.tif",
+      "aux": {
+        "aspect": "data/aux/aspect.tif",
+        "elevation": "data/aux/elevation.tif",
+        "evi": "data/aux/evi_2020.tif",
+        "landcover": "data/aux/landcover_2020.tif",
+        "precipitation": "data/aux/precipitation_2020.tif",
+        "slope": "data/aux/slope.tif",
+        "soil_moisture": "data/aux/soil_moisture_2020.tif"
+      }
+    },
+    {
+      "key": "2021",
+      "source": "data/raw/inundation_2021.tif",
+      "aux": {
+        "aspect": "data/aux/aspect.tif",
+        "elevation": "data/aux/elevation.tif",
+        "evi": "data/aux/evi_2021.tif",
+        "landcover": "data/aux/landcover_2021.tif",
+        "precipitation": "data/aux/precipitation_2021.tif",
+        "slope": "data/aux/slope.tif",
+        "soil_moisture": "data/aux/soil_moisture_2021.tif"
+      }
+    },
+    {
+      "key": "2022",
+      "source": "data/raw/inundation_2022.tif",
+      "aux": {
+        "aspect": "data/aux/aspect.tif",
+        "elevation": "data/aux/elevation.tif",
+        "evi": "data/aux/evi_2022.tif",
+        "landcover": "data/aux/landcover_2022.tif",
+        "precipitation": "data/aux/precipitation_2022.tif",
+        "slope": "data/aux/slope.tif",
+        "soil_moisture": "data/aux/soil_moisture_2022.tif"
+      }
+    },
+    {
+      "key": "2023",
+      "source": "data/raw/inundation_2023.tif",
+      "aux": {
+        "aspect": "data/aux/aspect.tif",
+        "elevation": "data/aux/elevation.tif",
+        "evi": "data/aux/evi_2023.tif",
+        "landcover": "data/aux/landcover_2023.tif",
+        "precipitation": "data/aux/precipitation_2023.tif",
+        "slope": "data/aux/slope.tif",
+        "soil_moisture": "data/aux/soil_moisture_2023.tif"
+      }
+    },
+    {
+      "key": "2024",
+      "source": "data/raw/inundation_2024.tif",
+      "aux": {
+        "aspect": "data/aux/aspect.tif",
+        "elevation": "data/aux/elevation.tif",
+        "evi": "data/aux/evi_2024.tif",
+        "landcover": "data/aux/landcover_2024.tif",
+        "precipitation": "data/aux/precipitation_2024.tif",
+        "slope": "data/aux/slope.tif",
+        "soil_moisture": "data/aux/soil_moisture_2024.tif"
+      }
+    },
+    {
+      "key": "2025",
+      "source": "data/raw/inundation_2025.tif",
+      "aux": {
+        "aspect": "data/aux/aspect.tif",
+        "elevation": "data/aux/elevation.tif",
+        "evi": "data/aux/evi_2025.tif",
+        "landcover": "data/aux/landcover_2025.tif",
+        "precipitation": "data/aux/precipitation_2025.tif",
+        "slope": "data/aux/slope.tif",
+        "soil_moisture": "data/aux/soil_moisture_2025.tif"
+      }
+    }
+  ],
+  "cnn_split_mode": null,
+  "cnn_block_cells": null,
+  "cnn_buffer_cells": 4,
+  "processing_mask": "data/masks/environment_processing_mask.tif",
+  "physical_bound_policy": null,
+  "physical_bounds": {
+    "lower": 0,
+    "annual_days": true
+  }
+}
