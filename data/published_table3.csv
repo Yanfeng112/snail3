@@ -1,0 +1,10 @@
+region,marshland_id,observed,predicted
+dongting,Matian,0.034,0.059
+dongting,Xingang,0.093,0.167
+dongting,Junshan,0.000,0.013
+poyang,Ganyuzhou,0.000,0.024
+poyang,Fanlongzhou,0.000,0.032
+poyang,Chenjiamen,0.000,0.073
+anhui,Xinzhou,0.024,0.037
+anhui,Laozhou,0.162,0.258
+anhui,Chenqiao,0.143,0.263
